@@ -5,8 +5,6 @@ LABEL version="2.3.1"
 LABEL description="OCS"
 
 RUN apt-get update
-RUN sudo echo "America/Brazil" > /etc/timezone
-RUN sudo dpkg-reconfigure -f noninteractive tzdata
 
 COPY OCSNG_SERVER /tmp/
 
