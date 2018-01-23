@@ -6,7 +6,7 @@ LABEL description="OCS"
 
 RUN apt-get update
 
-COPY OCSNG_SERVER /tmp/
+ADD OCSNG_SERVER /tmp/
 
 RUN apt-get -y install \
     apache2 \
