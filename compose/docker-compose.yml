@@ -9,7 +9,7 @@ services:
       - db-data-ocs:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ocs
+      MYSQL_ROOT_PASSWORD: mdp
       MYSQL_DATABASE: ocsweb
       MYSQL_USER: ocs
       MYSQL_PASSWORD: ocs
@@ -38,4 +38,7 @@ services:
       - db-ocs
 volumes:
   db-data-ocs:
+    driver: local
   ocs-data:
+    driver: local
+

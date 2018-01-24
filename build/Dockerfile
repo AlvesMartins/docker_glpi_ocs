@@ -103,6 +103,11 @@ RUN chmod +x /root/run.sh ;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/* ;
 
+WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
+
+RUN wget https://github.com/PluginsOCSInventory-NG/officepack/releases/download/2.0/officepack.zip
+
+
 
 EXPOSE 80
 EXPOSE 443
