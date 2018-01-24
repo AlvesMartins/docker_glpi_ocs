@@ -103,7 +103,7 @@ RUN chmod +x /root/run.sh ;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/* ;
 
-ADD  install.php /usr/share/ocsinventory-reports/ocsreports/install.php ;\
+ADD  install.php /usr/share/ocsinventory-reports/ocsreports/
 
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
 
