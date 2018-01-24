@@ -8,10 +8,10 @@ RUN apt-get update
 
 ADD OCSNG_SERVER /tmp/
 
-RUN apt-get -y install \
+RUN apt-get update && apt-get install python-software-properties software-properties-common -y \
+    && apt-get -y install \
     apache2 \
     libmysqlclient15-dev \
-    mysql-server \
     php5 \
     php5-gd \
     php5-mysql \
