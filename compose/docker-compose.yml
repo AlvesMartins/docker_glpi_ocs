@@ -19,7 +19,7 @@ services:
     networks:
       - netink
     links:
-      - db-ocs
+      - db
     ports:
      - 80:80
      - 443:443
