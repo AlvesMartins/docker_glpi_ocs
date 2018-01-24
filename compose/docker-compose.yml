@@ -16,7 +16,6 @@ services:
     ports:
       - "3306"
   ocs:
-    #image: ocsinventory/ocsinventory-docker-image:2.3.1
     image: alvesdocker/docker_glpi_ocs:ocs
     container_name: ocs-server
     depends_on:
