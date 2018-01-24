@@ -5,6 +5,7 @@ services:
     image: mariadb:10.3
     container_name: db-ocs
     volumes:
+      - ./sql/:/docker-entrypoint-initdb.d/
       - db-data-ocs:/var/lib/mysql
     restart: always
     environment:
@@ -14,12 +15,10 @@ services:
       MYSQL_PASSWORD: ocs
     ports:
       - "3306"
-    networks:
-      - ocsinet
-
   ocs:
     #image: ocsinventory/ocsinventory-docker-image:2.3.1
-    image: rdglinux/ocs
+    image: ocsinventory/ocsinventory-docker-image:latest
+    container_name: ocs-server
     depends_on:
       - db-ocs
     ports:
@@ -33,14 +32,8 @@ services:
 
     volumes :
       - ocs-data:/usr/share/ocsinventory-reports/
-    networks:
-      - glpinet
     links:
       - db-ocs
-
-networks:
-  glpinet:
-
 volumes:
   db-data-ocs:
   ocs-data:
