@@ -23,7 +23,7 @@ services:
       - db-ocs
     ports:
       - "8989:80"
-    environment:ls
+    environment:
 
       OCS_DBNAME: ocsweb
       OCS_DBSERVER_READ: db-ocs
