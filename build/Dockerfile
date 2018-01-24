@@ -1,4 +1,5 @@
-FROM debian:jessie-slim
+#FROM debian:jessie-slim
+FROM debian:jessie
 
 LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
@@ -54,7 +55,7 @@ WORKDIR /tmp/ocs/Apache
 RUN perl Makefile.PL ;\
     make ;\
     make install ;\
-    cp /usr/share/zoneinfo/Europe/Paris /etc/localtime ;\
+    cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime ;\
     cp -R blib/lib/Apache /usr/local/share/perl/5.20.2/ ;\
     cp -R Ocsinventory /usr/local/share/perl/5.20.2/ ;\
     cp /tmp/ocs/etc/logrotate.d/ocsinventory-server /etc/logrotate.d/ ;\
@@ -102,7 +103,7 @@ RUN chmod +x /root/run.sh ;\
     rm -rf /var/cache/apt/archives/* ;
 
 
-EXPOSE 80
-EXPOSE 443
+#EXPOSE 80
+#EXPOSE 443
 
-CMD ["/bin/bash", "/root/run.sh"]
+#CMD ["/bin/bash", "/root/run.sh"]
