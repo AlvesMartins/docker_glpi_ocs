@@ -75,7 +75,6 @@ WORKDIR /tmp/ocs
 
 COPY dbconfig.inc.php /usr/share/ocsinventory-reports/ocsreports/
 
-COPY install.php /usr/share/ocsinventory-reports/ocsreports/
 
 RUN cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports ;\
     bash -c 'mkdir -p /var/lib/ocsinventory-reports/{download,ipd,logs,scripts,snmp}' ;\
@@ -102,6 +101,8 @@ RUN chmod +x /root/run.sh ;\
     apt-get autoremove ;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/* ;
+
+COPY install.php /usr/share/ocsinventory-reports/ocsreports/
 
 EXPOSE 80
 EXPOSE 443
