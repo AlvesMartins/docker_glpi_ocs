@@ -29,7 +29,7 @@ services:
     container_name: db-ocs
     volumes:
       - ./sql/:/docker-entrypoint-initdb.d/
-      - ocsdata:/var/lib/mysql
+      - db-data:/var/lib/mysql
     networks:
       - netink
     restart: always
@@ -45,7 +45,7 @@ networks:
   netink:
 
 volumes:
-  db-data-ocs:
+  db-data:
     driver: local
   ocs-data:
     driver: local
