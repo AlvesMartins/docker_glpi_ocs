@@ -41,6 +41,7 @@ RUN apt-get update ; \
     libarchive-zip-perl \
     libmodule-build-perl \
     wget \
+    nano \
     tar \
     make ;\
     cpan -i XML::Entities ;\
