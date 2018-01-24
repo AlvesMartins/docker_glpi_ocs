@@ -75,6 +75,8 @@ WORKDIR /tmp/ocs
 
 COPY dbconfig.inc.php /usr/share/ocsinventory-reports/ocsreports/
 
+COPY install.php /usr/share/ocsinventory-reports/ocsreports/
+
 RUN cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports ;\
     bash -c 'mkdir -p /var/lib/ocsinventory-reports/{download,ipd,logs,scripts,snmp}' ;\
     chmod -R +w /var/lib/ocsinventory-reports ;\
