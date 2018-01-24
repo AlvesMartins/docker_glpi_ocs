@@ -9,19 +9,20 @@ services:
     ports:
       - "8989:80"
     environment:
-
       OCS_DBNAME: ocsweb
       OCS_DBSERVER_READ: db-ocs
       OCS_DBSERVER_WRITE: db-ocs
       OCS_DBUSER: ocs
       OCS_DBPASS: ocs
-
     volumes :
       - ocs-data:/usr/share/ocsinventory-reports/
       - ocs-data:/etc/ocsinventory-reports/
       - ocs-data:/var/lib/ocsinventory-reports/
+    networks:
+      - netink
     links:
       - db-ocs
+
 
   db-ocs:
     image: mysql:5.7
@@ -29,6 +30,8 @@ services:
     volumes:
       - ./sql/:/docker-entrypoint-initdb.d/
       - db-data-ocs:/var/lib/mysql
+    networks:
+      - netink
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mdp
@@ -37,6 +40,9 @@ services:
       MYSQL_PASSWORD: ocs
     ports:
       - "3306"
+
+networks:
+  netink:
 
 volumes:
   db-data-ocs:
