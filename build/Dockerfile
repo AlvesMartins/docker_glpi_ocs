@@ -4,8 +4,6 @@ LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
 LABEL description="OCS"
 
-RUN apt-get update
-
 ADD OCSNG_SERVER /tmp/
 
 RUN apt-get update && apt-get install python-software-properties software-properties-common -y \
