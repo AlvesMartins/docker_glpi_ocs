@@ -1,6 +1,6 @@
 FROM debian:jessie-slim
 
-LABEL maintainer="contact@ocsinventory-ng.org"
+LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
 LABEL description="OCS (Open Computers and Software Inventory Next Generation)"
 
