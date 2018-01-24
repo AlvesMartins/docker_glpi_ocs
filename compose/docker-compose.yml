@@ -5,13 +5,11 @@ services:
     image: alvesdocker/docker_glpi_ocs:ocs
     container_name: ocs-server
     depends_on:
-      - db-ocs
-    ports:
-      - "8989:80"
+      - db
     environment:
       OCS_DBNAME: ocsweb
-      OCS_DBSERVER_READ: db-ocs
-      OCS_DBSERVER_WRITE: db-ocs
+      OCS_DBSERVER_READ: db
+      OCS_DBSERVER_WRITE: db
       OCS_DBUSER: ocs
       OCS_DBPASS: ocs
     volumes :
@@ -22,14 +20,16 @@ services:
       - netink
     links:
       - db-ocs
+    ports:
+     - 80:80
+     - 443:443
 
-
-  db-ocs:
+  db:
     image: mysql:5.7
     container_name: db-ocs
     volumes:
       - ./sql/:/docker-entrypoint-initdb.d/
-      - db-data-ocs:/var/lib/mysql
+      - ocsdata:/var/lib/mysql
     networks:
       - netink
     restart: always
@@ -39,7 +39,7 @@ services:
       MYSQL_USER: ocs
       MYSQL_PASSWORD: ocs
     ports:
-      - "3306"
+      - 3306:3306
 
 networks:
   netink:

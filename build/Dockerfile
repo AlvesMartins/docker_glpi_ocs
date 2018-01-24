@@ -1,5 +1,5 @@
-FROM debian:jessie-slim
-#FROM debian:jessie
+#FROM debian:jessie-slim
+FROM debian:jessie
 
 LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
