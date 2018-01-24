@@ -2,10 +2,706 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="469f19ba-260e-4275-a725-7f4aa4741922" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/2.3.1/Dockerfile" afterPath="$PROJECT_DIR$/2.3.1/Dockerfile" />
-      <change beforePath="$PROJECT_DIR$/conf/ocsinventory-reports.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/z-ocsinventory-server.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scripts/run.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/Dockerfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/conf/ocsinventory-reports.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/conf/z-ocsinventory-server.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/dbconfig.inc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/install.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/scripts/run.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/2.3.1/setup.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/Dockerfile" afterPath="$PROJECT_DIR$/build/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Changes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/INSTALL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/MANIFEST" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Makefile.PL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Config.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Database.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Extensions.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/History.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Internals.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Inventory.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Ipdiscover.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Snmp.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Interface/Updates.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Map.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Plugins.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Plugins/Apache.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Plugins/Modules.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/SOAP.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Datafilter.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Download.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Download/Inventory.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Example.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Filter.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Ipdiscover.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Notify.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Registry.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Snmp.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Snmp/Data.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Snmp/Inventory.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Capacities/Update.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Communication.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Communication/Session.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Constants.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Duplicate.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Groups.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Cache.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Capacities.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Data.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Export.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Filter.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Update.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Update/AccountInfos.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Inventory/Update/Hardware.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Modperl1.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Modperl2.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/System.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/System/Config.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/Apache/Ocsinventory/Server/Useragent.pm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/INSTALL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/create-release-tarball.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/docker-download.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ipdiscover-util.README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ipdiscover-util.pl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ocs-errors" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ocsinventory-injector.README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ocsinventory-injector.pl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ocsinventory-log.README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/ocsinventory-log.pl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/soap-client.README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/binutils/soap-client.pl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/Interface/get_computers_V1-request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/download_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/file_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/inventory_reply.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/inventory_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/prolog_reply.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/prolog_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/snmp_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/update_reply.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/dtd/update_request.dtd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/etc/logrotate.d/ocsinventory-server" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/etc/ocsinventory/ocsinventory-reports.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/etc/ocsinventory/ocsinventory-server.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/.github/ISSUE_TEMPLATE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/Changes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/Contributors" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/ajax.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/AUTH/auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/AUTH/methode/always_ok.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/AUTH/methode/cas.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/AUTH/methode/ldap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/AUTH/methode/local.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/identity/identity.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/identity/methode/ldap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/identity/methode/local.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/ipdiscover/ipdiscover.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/ipdiscover/methode/local.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/require/cas.config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/backend/require/connexion.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/computer/menu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/computer/plugins.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/js.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/main_menu.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/profiles/admin.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/profiles/dde_teledeploy.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/profiles/ladmin.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/profiles/read-only.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/profiles/sadmin.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/config/urls.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/bootstrap-custom.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/boxsizing.htc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/computer_details.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/dataTables-custom.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/forms.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/graphic.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/header.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/ocsreports.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/onglets.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/css/winclassic.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/download/README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/ocsbase.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/ocsbase_new.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/oui.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/update/7007.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/update/7008.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/update/7009.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/update/7010.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/files/update/7011.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/Gest_admin1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/Gest_admin2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/activer.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/aff_all.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/archives.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/banniere-ocs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/blanc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/cadena_ferme.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/cadena_op.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/cadena_ouvert.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/cal.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/compress.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/config_search.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/controleur_d.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/deconnexion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/delete-big.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/delete-small.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/delete.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/error.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/fond.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/green.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/groups_search.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/info.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/logo OCS-ng-96.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/logo-ocs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/mail.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/mass_affect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif_all.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif_anul_v2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif_tab.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/modif_valid_v2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/no_show.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_left.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_left_on.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_right.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_right.gif.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_right_on.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/norm_right_on.gif.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/plus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/prec16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/prec24.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/print.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/proch16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/proch24.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/show.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sort_asc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sort_asc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sort_both.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sort_desc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sort_desc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/sphere-ocs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/stat.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/stat1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/success.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/tele_search.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/image/warning.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/install.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/ipdiscover-util.pl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/js/bootstrap-custom.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/js/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/js/datetimepicker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/js/function.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/charts.js/Chart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/charts.js/Chart.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/Contributing.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/Readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/license.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/css/dataTables.bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/css/jquery.dataTables.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/css/jquery.dataTables.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/css/jquery.dataTables_themeroller.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/Sorting icons.psd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/back_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/back_enabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/back_enabled_hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/forward_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/forward_enabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/forward_enabled_hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/sort_asc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/sort_asc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/sort_both.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/sort_desc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/images/sort_desc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/js/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/js/jquery.dataTables.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/js/jquery.dataTables.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/datatable/media/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.fileupload.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.fileupload.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.iframe-transport.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.iframe-transport.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.ui.widget.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-fileupload/jquery.ui.widget.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery-migrate-1/jquery-migrate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/jquery/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/password_compat/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/password_compat/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/password_compat/password.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/AuthenticationException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Client.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/CookieJar.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/GracefullTerminationException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/InvalidArgumentException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/Catalan.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/English.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/French.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/German.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/Greek.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/Japanese.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/LanguageInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Languages/Spanish.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/OutOfSequenceBeforeAuthenticationCallException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/OutOfSequenceBeforeClientException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/OutOfSequenceBeforeProxyException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/OutOfSequenceException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/PGTStorage/AbstractStorage.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/PGTStorage/Db.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/PGTStorage/File.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Abstract.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Http.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Http/Abstract.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Http/Get.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Http/Post.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Imap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxiedService/Testable.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyChain.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyChain/AllowedList.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyChain/Any.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyChain/Interface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyChain/Trusted.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/ProxyTicketException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/AbstractRequest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/CurlMultiRequest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/CurlRequest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/MultiRequestInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/Request/RequestInterface.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/CAS/TypeMismatchException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/NOTICE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/Building" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/ChangeLog" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/Upgrading" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/config.example.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/create_pgt_storage_db_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_advanced_saml11.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_custom_urls.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_gateway.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_hardening.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_html.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_lang.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_logout.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_no_ssl_cn_validation.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_pgt_storage_db.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_pgt_storage_file.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_proxy_GET.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_proxy_POST.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_proxy_rebroadcast.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_proxy_serviceWeb.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_proxy_serviceWeb_chaining.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_renew.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_service.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_service_POST.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_service_that_proxies.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/example_simple.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/examples/script_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/images/esup-portail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/images/jasig.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/images/phpcas.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/phpcas/docs/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Barcode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/LICENSE.TXT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Convert.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Codabar.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeNineThree.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneOne.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneTwoEight.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneTwoEight/A.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneTwoEight/B.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneTwoEight/C.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeOneTwoEight/Process.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeThreeNine.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeThreeNineCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeThreeNineExt.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/CodeThreeNineExtCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/EanEight.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/EanFive.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/EanOneThree.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/EanTwo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Imb.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/ImbPre.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/InterleavedTwoOfFive.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/InterleavedTwoOfFiveCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/KlantIndex.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Msi.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/MsiCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Pharma.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/PharmaTwoTracks.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Planet.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Postnet.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/Raw.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/RoyalMailFourCc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/StandardTwoOfFive.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/StandardTwoOfFiveCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/UpcA.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Linear/UpcE.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Raw.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/Data.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/Encode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/EncodeTxt.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/ErrorCorrection.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/Modes.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/Placement.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Datamatrix/Steps.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/PdfFourOneSeven.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/PdfFourOneSeven/Compaction.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/PdfFourOneSeven/Data.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/PdfFourOneSeven/Sequence.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/ByteStream.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Data.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Encode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Encoder.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/EncodingMode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Estimate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Init.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/InputItem.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Mask.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/MaskNum.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Spec.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/SpecRs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/QrCode/Split.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/Type/Square/Raw.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Barcode/autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Css.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/LICENSE.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model/Cmyk.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model/Gray.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model/Hsl.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model/Rgb.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Model/Template.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Pdf.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Spot.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/Web.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/libraries/tclib/Color/autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_admininfo/cd_admininfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_bios/cd_bios.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_comments/cd_comments.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_configuration/affect_again.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_configuration/cd_configuration.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_controllers/cd_controllers.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_drives/cd_drives.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_inputs/cd_inputs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_memories/cd_memories.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_modems/cd_modems.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_monitors/cd_monitors.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_networks/cd_networks.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_pda/cd_pda.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_ports/cd_ports.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_printers/cd_printers.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_processors/cd_processors.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_registry/cd_registry.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_slots/cd_slots.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_softwares/cd_softwares.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_sounds/cd_sounds.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_storages/cd_storages.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_teledeploy/cd_teledeploy.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_videos/cd_videos.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/cd_vm/cd_vm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/computer_detail/require/functions.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/brazilian_portuguese/brazilian_portuguese.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/brazilian_portuguese/brazilian_portuguese.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/english/english.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/english/english.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/french/french.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/french/french.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/german/german.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/german/german.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/hungarian/hungarian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/hungarian/hungarian.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/italian/italian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/italian/italian.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/japanese/japanese.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/japanese/japanese.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/lang_config.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/language.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/polish/polish.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/polish/polish.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/portuguese/portuguese.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/portuguese/portuguese.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/russian/russian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/russian/russian.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/slovenian/slovenian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/slovenian/slovenian.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/spanish/spanish.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/spanish/spanish.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/turkish/turkish.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/language/turkish/turkish.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_admininfo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_admininfo_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_computers.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_computers_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_computersred.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_computersred_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_soft.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_all_soft_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_codes.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_codes_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_config.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_config_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_dict.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_dict_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_doubles.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_doubles_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_groups.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_groups_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_help.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_help_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_ipdiscover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_ipdiscover_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_label.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_label_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_local.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_local_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_logs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_logs_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_multi_search.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_multi_search_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_pass.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_pass_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_plugins.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_plugins_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_regconfig.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_regconfig_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_repart_tag.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_repart_tag_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_stats.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_stats_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_teledeploy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_teledeploy_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_upload_file.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_upload_file_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_users.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/img/ms_users_a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_admininfo/ms_admininfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_all_computers/ms_all_computers.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_all_soft/ms_all_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_computer/ms_computer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_computer/ms_computer_views.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_computer/ms_qrcode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_adminvalues.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_blacklist.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_custom_download.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_custom_frequency.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_custom_ipdiscover.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_custom_param.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_custom_prolog.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/ms_label.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_config/require/function_blacklist.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_console/ms_console.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_debug/ms_debug.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_dict/ms_dict.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_doubles/ms_doubles.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_export/ms_csv.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_export/ms_export_ocs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_export/ms_soft_csv.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_groups/ms_custom_groups.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_groups/ms_group_show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_groups/ms_groups.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_help/ms_ask.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_help/ms_irc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_help/ms_offers.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_help/ms_wiki.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_ipdiscover/ms_admin_ipdiscover.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_ipdiscover/ms_custom_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_ipdiscover/ms_ipdiscover.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_ipdiscover/ms_ipdiscover_analyse.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_logs/ms_logs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_multi_search/ms_custom_lock.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_multi_search/ms_custom_sup.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_multi_search/ms_custom_tag.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_multi_search/ms_multi_search.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_plugins/functions_check.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_plugins/functions_delete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_plugins/functions_webservices.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_plugins/ms_pluginsmanager.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_plugins/plugins.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_regconfig/ms_regconfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_regconfig/require/function_regconfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_repart_tag/ms_repart_tag.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_scripts/ms_update_new_tag.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_search_soft/js/autocomplete-3-2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_search_soft/js/print.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_search_soft/ms_options.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_search_soft/ms_search_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_search_soft/require/fonction.inc.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_server_infos/ms_server_infos.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_snmp/ms_snmp.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_snmp/ms_snmp_detail.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_snmp/require/function_snmp.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_stats/class/msstats.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_stats/class/msstatsconnexion.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_stats/class/msstatstop.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_stats/files/ms_stats_top_soft.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_stats/ms_stats.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/js/package-form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/lib/package_forms.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/lib/package_functions.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_custom_pack.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_rules_redistrib.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_server_redistrib.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_speed_stat.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_activate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_actives.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_compress.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_modify.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_package.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_package_new.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_popup_active.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/ms_tele_stats.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/views/activate_form_view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_teledeploy/views/package_form_view.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_upload_file/ms_local.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_upload_file/ms_upload_file.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_upload_file/ms_upload_file_popup.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_upload_file/ms_view_file.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/js/profile-create-form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/js/profile-edit-form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/lib/profile_functions.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_add_profile.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_add_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_admin_user_group.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_config_account.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_custom_perim.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_profile_details.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_profiles.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_user_details.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/ms_users.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/views/profile_create_form.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/views/profile_edit_form.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/main_sections/ms_users/views/users_views.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/options_config/del_old_computors.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_admininfo/sd_admininfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_cards/sd_cards.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_cartridges/sd_cartridges.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_cpus/sd_cpus.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_drives/sd_drives.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_fans/sd_fans.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_inputs/sd_inputs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_localprinters/sd_localprinters.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_memories/sd_memories.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_modems/sd_modems.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_networks/sd_networks.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_ports/sd_ports.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_powersupplies/sd_powersupplies.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_softwares/sd_softwares.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_sounds/sd_sounds.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_storages/sd_storages.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_switch/sd_switch.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_trays/sd_trays.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_videos/sd_videos.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/sd_virtualmachines/sd_virtualmachines.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/plugins/snmp_detail/snmp_config.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/aide_developpement.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/charts/StatsChartsRenderer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/Profile.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/TxtJsSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/TxtProfileSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/TxtUrlsSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/Urls.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/XMLJsSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/XMLProfileSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/XMLUrlsSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/config/include.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/fichierConf.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/footer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_admininfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_commun.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_computers.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_config_generale.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_console.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_cookies.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_dico.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_files.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_graphic.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_groups.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_ipdiscover.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_machine.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_modify.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_opt_param.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_rules.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_search.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_server.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_stats.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_table_html.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_telediff.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_users.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/function_wol.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/header.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/html_header.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/ComputerMenuRenderer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/MainMenuRenderer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/Menu.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/MenuElem.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/MenuRenderer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/TxtMenuSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/XMLMenuSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/menu/include.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/plugin/ComputerPlugin.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/plugin/XMLPluginsSerializer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/plugin/include.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/table/Column.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/table/Columns.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/table/Table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/ActionsColumn.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/CheckboxColumn.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/Column.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/LinkColumn.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/Table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/TableRenderer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/table.html.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/tables/tables.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/require/views/forms.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/tools/gz.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/tools/recompose_paquet.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/upload/README" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/ocsreports/var.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/OCSNG_SERVER/setup.sh" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,31 +712,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compose/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2.3.1/Dockerfile">
+        <entry file="file://$PROJECT_DIR$/build/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.3.1/install.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1538">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,11 +771,6 @@
             <path>
               <item name="docker_glpi_ocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker_glpi_ocs" type="462c0819:PsiDirectoryNode" />
-              <item name="2.3.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker_glpi_ocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker_glpi_ocs" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -147,9 +818,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="44" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5057648" order="0" side_tool="true" content_ui="tabs" />
@@ -236,26 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.3.1/dbconfig.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compose/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -280,6 +934,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compose/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1538">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
