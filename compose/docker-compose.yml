@@ -19,13 +19,13 @@ services :
       - 80:80
       - 443:443
 
-   glpi:
+  glpi:
     image: alvesdocker/docker_glpi_ocs:glpi
     container_name : glpi-server
     depends_on:
       - db-glpi
     ports:
-      - 80:8080
+      - 8080:80
     restart: always
     links:
       - db-glpi
@@ -58,7 +58,7 @@ services :
       MYSQL_USER: glpi
       MYSQL_PASSWORD: glpi
     ports:
-      - 3306:3307
+      - 3307:3306
 
 
 
