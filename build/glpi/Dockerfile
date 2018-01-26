@@ -19,7 +19,11 @@ RUN wget ${GLPI_URL} \
     && rm -f /etc/nginx/sites-available/default \
     && apt-get update -y && apt-get install bzip2 -y && rm -rf /var/lib/apt/lists/* \
     && wget ${FUSION_URL} \
+    && wget https://github.com/pluginsGLPI/ocsinventoryng/releases/download/1.4.3/glpi-ocsinventoryng-1.4.3.tar.gz \
+    && wget https://forge.glpi-project.org/attachments/download/2216/GLPI-dashboard_plugin-0.9.0_GLPI-9.2.x.tar.gz \
     && tar jxf glpi-fusioninventory-${FUSION_VERSION}.tar.bz2 -C /var/www/html/plugins/ \
+    && tar -xvf glpi-ocsinventoryng-1.4.3.tar.gz -C /var/www/html/plugins/ \
+    && tar -xvf GLPI-dashboard_plugin-0.9.0_GLPI-9.2.x.tar.gz /var/www/html/plugins/ \
     && rm -f glpi-fusioninventory-${FUSION_VERSION}.tar.bz2 \
     && chown -R www-data:www-data /var/www/html/
 
