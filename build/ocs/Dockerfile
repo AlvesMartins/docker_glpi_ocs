@@ -102,10 +102,11 @@ RUN chmod +x /root/run.sh ;\
     apt-get autoclean ;\
     apt-get autoremove ;\
     rm -rf /var/lib/apt/lists/* ;\
-    rm -rf /var/cache/apt/archives/* ;
+    rm -rf /var/cache/apt/archives/* ;\
+    rm -f /usr/share/ocsinventory-reports/ocsreports/image/banniere-ocs.png  ;\
+    rm -f /usr/share/ocsinventory-reports/ocsreports/image/sphere-ocs.png  ;
 
 COPY /image/banniere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
-
 COPY /image/sphere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
 
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
