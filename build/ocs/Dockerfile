@@ -105,6 +105,10 @@ RUN chmod +x /root/run.sh ;\
 
 ADD  install.php /usr/share/ocsinventory-reports/ocsreports/
 
+COPY /image/banniere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
+
+COPY /image/sphere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
+
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
 
 RUN wget https://github.com/PluginsOCSInventory-NG/officepack/releases/download/2.0/officepack.zip
