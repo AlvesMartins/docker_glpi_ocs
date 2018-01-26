@@ -23,7 +23,7 @@ RUN wget ${GLPI_URL} \
     && wget https://forge.glpi-project.org/attachments/download/2216/GLPI-dashboard_plugin-0.9.0_GLPI-9.2.x.tar.gz \
     && tar jxf glpi-fusioninventory-${FUSION_VERSION}.tar.bz2 -C /var/www/html/plugins/ \
     && tar -xvf glpi-ocsinventoryng-1.4.3.tar.gz -C /var/www/html/plugins/ \
-    && tar -xvf GLPI-dashboard_plugin-0.9.0_GLPI-9.2.x.tar.gz /var/www/html/plugins/ \
+    && tar -xvf GLPI-dashboard_plugin-0.9.0_GLPI-9.2.x.tar.gz -C /var/www/html/plugins/ \
     && rm -f glpi-fusioninventory-${FUSION_VERSION}.tar.bz2 \
     && chown -R www-data:www-data /var/www/html/
 
