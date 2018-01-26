@@ -19,6 +19,17 @@ services :
       - 80:80
       - 443:443
 
+   glpi:
+    image: alvesdocker/docker_glpi_ocs:glpi
+    container_name : glpi-server
+    depends_on:
+      - db-glpi
+    ports:
+      - 80:80
+    restart: always
+    links:
+      - db-glpi
+
   db :
     image : mysql:5.7
     container_name : ocsinventory-db
@@ -34,9 +45,28 @@ services :
     ports :
       - 3306:3306
 
+
+  db-glpi:
+    image: mysql:5.7
+    container_name: db-glpi
+    volumes:
+      - db-data-glpi:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mdp
+      MYSQL_DATABASE: glpi
+      MYSQL_USER: glpi
+      MYSQL_PASSWORD: glpi
+    ports:
+      - 3306:3306
+
+
+
 volumes:
   ocsdata:
     driver: local
   ocssrv:
     driver: local
-
+  db-data-glpi:
+    driver: local
+  glpi-data:
