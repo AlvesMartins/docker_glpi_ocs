@@ -1,52 +1,42 @@
 version: '3'
-
-services:
-  ocs:
-    image: alvesdocker/docker_glpi_ocs:ocs
-    container_name: ocs-server
-    depends_on:
-      - db
-    environment:
-      OCS_DBNAME: ocsweb
-      OCS_DBSERVER_READ: db
-      OCS_DBSERVER_WRITE: db
-      OCS_DBUSER: ocs
-      OCS_DBPASS: ocs
+services :
+  web :
+    image : alvesdocker/docker_glpi_ocs:ocs
+    container_name : ocsinventory-server
+    environment :
+      OCS_DBNAME : ocsweb
+      OCS_DBSERVER_READ : db
+      OCS_DBSERVER_WRITE : db
+      OCS_DBUSER : ocs
+      OCS_DBPASS : ocs
     volumes :
-      - ocs-data:/usr/share/ocsinventory-reports/
-      - ocs-data:/etc/ocsinventory-reports/
-      - ocs-data:/var/lib/ocsinventory-reports/
-    networks:
-      - netink
-    links:
+      - ocssrv:/usr/share/ocsinventory-reports/
+      - ocssrv:/etc/ocsinventory-reports/
+      - ocssrv:/var/lib/ocsinventory-reports/
+    links :
       - db
-    ports:
-     - 80:80
-     - 443:443
+    ports :
+      - 80:80
+      - 443:443
 
-  db:
-    image: mysql:5.7
-    container_name: db-ocs
-    volumes:
-      - ./sql/:/docker-entrypoint-initdb.d/
-      - db-data:/var/lib/mysql
-    networks:
-      - netink
+  db :
+    image : mysql:5.7
+    container_name : ocsinventory-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: mdp
-      MYSQL_DATABASE: ocsweb
-      MYSQL_USER: ocs
-      MYSQL_PASSWORD: ocs
-    ports:
+      MYSQL_ROOT_PASSWORD : mdp
+      MYSQL_USER : ocs
+      MYSQL_PASSWORD : ocs
+      MYSQL_DATABASE : ocsweb
+    volumes :
+      - ./sql/:/docker-entrypoint-initdb.d/
+      - ocsdata:/var/lib/mysql
+    ports :
       - 3306:3306
 
-networks:
-  netink:
-
 volumes:
-  db-data:
+  ocsdata:
     driver: local
-  ocs-data:
+  ocssrv:
     driver: local
 

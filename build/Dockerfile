@@ -3,7 +3,7 @@ FROM debian:jessie
 
 LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
-LABEL description="OCS (Open Computers and Software Inventory Next Generation)"
+LABEL description="OCS (Open Computers and Software Inventory)"
 
 ARG APT_FLAGS="-y --no-install-recommends"
 
