@@ -3,7 +3,7 @@ FROM debian:jessie
 
 LABEL maintainer="lucas.martins@semantix.com.br"
 LABEL version="2.3.1"
-LABEL description="OCS (Open Computers and Software Inventory)"
+LABEL description="OCS (Open Computers and Software Inventory Next Generation)"
 
 ARG APT_FLAGS="-y --no-install-recommends"
 
@@ -41,7 +41,6 @@ RUN apt-get update ; \
     libarchive-zip-perl \
     libmodule-build-perl \
     wget \
-    nano \
     tar \
     make ;\
     cpan -i XML::Entities ;\
@@ -77,7 +76,6 @@ WORKDIR /tmp/ocs
 
 COPY dbconfig.inc.php /usr/share/ocsinventory-reports/ocsreports/
 
-
 RUN cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports ;\
     bash -c 'mkdir -p /var/lib/ocsinventory-reports/{download,ipd,logs,scripts,snmp}' ;\
     chmod -R +w /var/lib/ocsinventory-reports ;\
@@ -102,12 +100,7 @@ RUN chmod +x /root/run.sh ;\
     apt-get autoclean ;\
     apt-get autoremove ;\
     rm -rf /var/lib/apt/lists/* ;\
-    rm -rf /var/cache/apt/archives/* ;\
-    rm -f /usr/share/ocsinventory-reports/ocsreports/image/banniere-ocs.png  ;\
-    rm -f /usr/share/ocsinventory-reports/ocsreports/image/sphere-ocs.png  ;
-
-COPY /image/banniere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
-COPY /image/sphere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
+    rm -rf /var/cache/apt/archives/* ;
 
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
 

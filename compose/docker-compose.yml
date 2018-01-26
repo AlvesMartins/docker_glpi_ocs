@@ -1,6 +1,6 @@
 version: '3'
 services :
-  web :
+  web:
     image : alvesdocker/docker_glpi_ocs:ocs
     container_name : ocsinventory-server
     environment :
