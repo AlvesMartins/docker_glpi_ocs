@@ -89,7 +89,7 @@ RUN cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports ;\
     chown -R www-data: /usr/share/ocsinventory-reports/
 
 COPY /conf/ocsinventory-reports.conf /conf/z-ocsinventory-server.conf /etc/apache2/conf-available/
-COPY /image/banniere-ocs.png /image/shere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
+COPY /image/banniere-ocs.png /image/sphere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
 
 COPY ./scripts/run.sh /root/run.sh
 
