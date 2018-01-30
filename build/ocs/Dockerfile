@@ -89,7 +89,10 @@ RUN cp -R ocsreports/* /usr/share/ocsinventory-reports/ocsreports ;\
     chown -R www-data: /usr/share/ocsinventory-reports/
 
 COPY /conf/ocsinventory-reports.conf /conf/z-ocsinventory-server.conf /etc/apache2/conf-available/
+COPY /image/banniere-ocs.png /image/shere-ocs.png /usr/share/ocsinventory-reports/ocsreports/image/
+
 COPY ./scripts/run.sh /root/run.sh
+
 
 RUN chmod +x /root/run.sh ;\
     ln -s /etc/apache2/conf-available/ocsinventory-reports.conf /etc/apache2/conf-enabled/ocsinventory-reports.conf ;\
@@ -103,7 +106,6 @@ RUN chmod +x /root/run.sh ;\
     rm -rf /var/cache/apt/archives/* ;
 
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
-
 RUN wget https://github.com/PluginsOCSInventory-NG/officepack/releases/download/2.0/officepack.zip
 
 
