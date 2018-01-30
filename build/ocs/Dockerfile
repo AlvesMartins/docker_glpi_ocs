@@ -99,6 +99,8 @@ RUN chmod +x /root/run.sh ;\
     apt-get clean ;\
     apt-get autoclean ;\
     apt-get autoremove ;\
+    rm  /usr/share/ocsinventory-reports/ocsreports/image/banniere-ocs.png ;\
+    rm  /usr/share/ocsinventory-reports/ocsreports/image/sphere-ocs.png ;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/* ;
 
