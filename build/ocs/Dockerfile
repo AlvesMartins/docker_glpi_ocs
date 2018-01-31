@@ -101,12 +101,14 @@ RUN chmod +x /root/run.sh ;\
     apt-get autoremove ;\
     rm  /usr/share/ocsinventory-reports/ocsreports/image/banniere-ocs.png ;\
     rm  /usr/share/ocsinventory-reports/ocsreports/image/sphere-ocs.png ;\
+    rm  /usr/share/ocsinventory-reports/ocsreports/css/bootstrap-custom.css;\
     rm -rf /var/lib/apt/lists/* ;\
     rm -rf /var/cache/apt/archives/* ;
 
 WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
 RUN wget https://github.com/PluginsOCSInventory-NG/officepack/releases/download/2.0/officepack.zip
 COPY image/*.png /usr/share/ocsinventory-reports/ocsreports/image/
+COPY image/*.css /usr/share/ocsinventory-reports/ocsreports/css/
 
 EXPOSE 80
 EXPOSE 443
