@@ -1,12 +1,12 @@
-#Docker OCS+GLPI
+# Docker OCS+GLPI
 
-##OCS-Inventory:
+## OCS-Inventory:
 
 OCS (Open Computers and Software Inventory Next Generation) is an assets management and deployment solution. Since 2001, OCS Inventory NG has been looking for making software and hardware more powerful. OCS Inventory NG asks its agents to know the software and hardware composition of every computer or server.
 
 
 
-##GLPI:
+## GLPI:
 
 GLPI (acronym: French: Gestionnaire Libre de Parc Informatique) is a free IT Asset Management, issue tracking system and service desk solution. This open source software is written in PHP and distributed under GPL license.
 
@@ -88,7 +88,7 @@ volumes:
     driver: local
   glpi-data:
 ```
-execute command:
+### execute command:
 
 ```
 docker-compose up -d
