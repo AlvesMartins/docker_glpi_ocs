@@ -109,7 +109,7 @@ WORKDIR /usr/share/ocsinventory-reports/ocsreports/download
 RUN wget https://github.com/PluginsOCSInventory-NG/officepack/releases/download/2.0/officepack.zip
 COPY image/*.png /usr/share/ocsinventory-reports/ocsreports/image/
 COPY image/*.css /usr/share/ocsinventory-reports/ocsreports/css/
-
+RUN apt-get clean -y
 EXPOSE 80
 EXPOSE 443
 
