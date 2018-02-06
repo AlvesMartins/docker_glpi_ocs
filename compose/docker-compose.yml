@@ -28,7 +28,19 @@ services :
       - 8080:80
     restart: always
     links:
+    - db-glpi
+
+  app:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-server
+    links:
+      - db
       - db-glpi
+    ports:
+      - 8181:80
+    environment:
+      - PMA_ARBITRARY=1
+
 
   db :
     image : mysql:5.7
