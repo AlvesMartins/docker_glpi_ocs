@@ -1,4 +1,5 @@
 # Docker OCS+GLPI
+![alt text](https://github.com/AlvesMartins/docker_glpi_ocs/blob/master/build/ocs/image/sphere-ocs.png)
 
 ## OCS-Inventory:
 
